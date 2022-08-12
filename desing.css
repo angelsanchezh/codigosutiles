@@ -6,10 +6,11 @@
 }
 
 .contenedorbtn{
-height: 150vh;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: transparent;
 
 }
 button{
