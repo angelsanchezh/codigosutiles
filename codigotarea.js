@@ -64,24 +64,82 @@ break
 
 case 3:
 
-let baserect = prompt("Dame el valor de la base");
-let alturarect = prompt("dame el valor de la altura");
+let baserect = prompt("Dame el valor de la base del rectangulo");
+let alturarect = prompt("dame el valor de la altura del rectangulo");
 let arearect = parseFloat(baserect * alturarect);
 
 alert("El valor del area del rectangulo es :" + arearect);
 
 break
+
 case 4:
 
-let basetri = prompt("Dame el valor de la base");
-let alturatri = prompt("dame el valor de la altura");
+let basetri = prompt("Dame el valor de la base del triangulo");
+let alturatri = prompt("dame el valor de la altura del triangulo");
 let areatri = parseFloat((basetri * alturatri)/2);
 
-alert("El valor de la altura  es :" + areatri);
+alert("El valor del area del triagulo es :" + areatri);
 
+break
 
+case 5:
+
+let radio = prompt("Dame el valor del radio del circulo ");
+var valorpi = 3.141592;
+let areacir = parseFloat(valorpi * (radio**2));
+
+alert("El valor del area del circulo  es :" + areacir);
+
+break
+
+case 6:
+
+let horastrabajadas = prompt("Cuantas horas trabajaste esta semana? ");
+let costodehora = prompt("Costo de hora");
+let sueldo = horastrabajadas * costodehora ; 
+
+if(horastrabajadas < 48){
+
+    alert("Te pagaremos cuando completes las 48 horas de ley");
+}
+
+else if(horastrabajadas > 48){
+    alert("No seas patero anda a tu casa, no pagamos horas extras");
+}
+else{
+alert("Tu sueldo es : " + sueldo); }
+
+break
+
+case 7:
+
+let cantidadtela = prompt("Cuantos Metros de tela necesitas ?");
+var pulgadas = 0.0254;
+let conversion = cantidadtela * pulgadas;
+
+alert("Necesitas pedir : " + conversion + " pulgadas");
+
+break
+
+case 8:
+
+let soles = prompt("Cuantos soles tienes")
+let tipodecambio = 3.94
+let cambio = soles / tipodecambio;
+
+alert("Te daran: " + cambio + " dolares ");
 
 
 }
 
 }
+
+
+
+
+
+//for (let i = 0 ; i <= 10 ; i++ ){
+  //  console.log("Iterador" + i)}
+
+ // for (let j = 0 ; j <= 10 ; j++ ){
+  //console.log("Jotas" + j)}
