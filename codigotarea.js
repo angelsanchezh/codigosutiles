@@ -1,25 +1,3 @@
-/*function CallMenu(){
-
-let nro_ejercicio = parseInt(prompt("escoge el numero de ejercicio que quieres ejecutar: \r\n 1.suma. \r\n 2.Promedio de Examanes \r\n 3. Calcular el area del rectangulo \r\n 4.Calcular el area del triangulo \r\n 5.calcular el area del Circulo \r\n 6. Calcular salario semanal \r\n 7. convertir pulgadas \r\n 8. cambiar a dolaresescoge una opcion \r\n 9.Empresa contrata personal \r\n 10. Nombre y edad de 3 personas \r\n 11. Bono por antiguedad \r\n 12. Incremento salario profesor \r\n 13. Califiaciones de alumnnos \r\n 14. Contabilizar lote de N focos \r\n 15. Determinar si persoan puede votar "));
-
-if(isNaN(nro_ejercicio)){
-    alert("por favor ingrese valores numericos")
-    }
-else{ Menu_Ejercicios(nro_ejercicio)
-}
-}
-
-function Menu_Ejercicios(nro_ejercicio){
-
-switch(nro_ejercicio){
-
-    case 1:
-        let valor1 = parseFloat(prompt("ingrese el valor 1 a sumar:"));
-        let valor2 = parseFloat(prompt("ingrese el valor 2 a sumar:"));
-        alert("La suma es : " + (valor1+valor2))
-}
-
-} */ 
 
 function CallMenu(){
 
@@ -124,10 +102,31 @@ break
 case 8:
 
 let soles = prompt("Cuantos soles tienes")
-let tipodecambio = 3.94
+var tipodecambio = prompt("ingresa el tipo de cambio")
 let cambio = soles / tipodecambio;
 
 alert("Te daran: " + cambio + " dolares ");
+
+break
+
+case 9:
+
+let nameyape = prompt("Cual es tu nombre y apellido");
+var fechanac = parseInt(prompt("cual es tu fecha de nacimiento"));
+
+var fechaactual = new Date(); 
+var year = fechaactual.getFullYear();
+
+
+var resultadoss = (year - fechanac);
+
+
+    alert("Hola \r\n"+ nameyape + "Tu edad es : " + resultadoss + "Es correcto ?");
+
+case 10:
+
+
+
 
 
 }
@@ -143,3 +142,20 @@ alert("Te daran: " + cambio + " dolares ");
 
  // for (let j = 0 ; j <= 10 ; j++ ){
   //console.log("Jotas" + j)}
+
+
+  //const productos = [ 
+    //{ name:"laptop", price: 1500, },
+    //{ name:"celular", price:2300, }, 
+    //{ name:"monitor", price:1000, }, 
+//]; 
+
+//console.log(productos.[1]);
+
+//productos.forEach((productos)=>{
+     //dentro del for Ecach podemos hacer lo que queramos console.log(productos[2]) })
+
+    // const div = document.getElementById("container")
+     
+    //const nuediv =  Array.from(div)
+    //console.log("div" , div);
