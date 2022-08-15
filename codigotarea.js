@@ -121,10 +121,55 @@ var year = fechaactual.getFullYear();
 var resultadoss = (year - fechanac);
 
 
-    alert("Hola \r\n"+ nameyape + "Tu edad es : " + resultadoss + "Es correcto ?");
+    alert("Hola"+ nameyape + "Tu edad es : " + resultadoss + "Es correcto ?");
 
 case 10:
 
+const nom1 = prompt("ingresa el primer nombre");
+const enom1 = parseInt(prompt("ingresa la edad de la primera persona"));
+
+const nom2 = prompt("ingresa el segundo nombre");
+const enom2 = parseInt(prompt("ingresa la edad de la segunda persona"));
+
+const nom3 = prompt("ingresa el nombre de la tercera persona");
+const enom3 = parseInt(prompt("ingresa la edad de la tercera persona"));
+
+if(enom1<enom2) {
+    
+        alert("El menor de las personas es :" + nom1 + " y tiene " + enom1 + " de edad");
+    } else if(enom2<enom3){ alert("El menor de las personas es :" + nom2 + " y tienes " + enom2 + " de edad");
+    } else{alert("El menor de las personas es :" + nom3 + " y tienes " + enom3 + " de edad")
+
+    }
+break
+case 11:
+    
+let trabaj1 = prompt("Cual es tu nombre ? ");
+let tiempotra = parseInt(prompt("desde que año trabajas"));
+var salario = parseInt(prompt("Cual es su sueldo"));
+
+var fechatra = new Date(); 
+var yeartra = fechatra.getFullYear();
+
+let bonif = (yeartra - tiempotra);
+
+var bono1 = salario + 100
+var bono2 = salario + 200
+var bono3 = salario + 1000
+
+if(bonif <= 3){
+    alert("Gracias " + trabaj1 + " por trabajar mas de " + bonif + " años tu salario es : " + salario + " USD." + " Pero recibiras un bono, hoy recibiras : " + bono1 + " USD");
+}
+//else if(bonif <= 3){
+
+  //  alert("Gracias " + trabaj1 + " por trabajar mas de " + bonif + " años tu salario es : " + salario + " USD." + " Pero recibiras un bono, hoy recibiras : " + bono2 + " USD");
+//}
+else if(bonif > 5){
+   alert("Gracias " + trabaj1 + " por trabajar mas de " + bonif + " años tu salario es : " + salario + " USD." + " Pero recibiras un bono, hoy recibiras : " + bono3 + " USD");
+}
+else{
+    alert("aun no cumples tu primer año para recibir el bono")
+}
 
 
 
